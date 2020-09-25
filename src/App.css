@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Jura:wght@700&display=swap');
+
+:root {
+	--pb: #0c3559;
+	--sb: #138ba5;
+	--rd: #f21d1d;
+	--wt: #f2f2f2;
+	--font1: 'Baskervville', serif;
+	--font2: 'Jura', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: var(--font1);
+	font-size: 8rem;
+	text-align: right;
+	color: var(--pb);
+	margin-bottom: 6rem;
+	display: block;
+}
+
+h2,
+h3,
+h4,
+h5,
+a {
+	font-family: var(--font2);
+}
+
+h2 {
+	font-size: 4rem;
+	font-weight: 400;
+	text-align: right;
+	line-height: 1.75;
+	color: var(--sb);
+	margin-bottom: 6rem;
+	display: block;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 2.25rem;
+	text-align: right;
+	line-height: 1.75;
+	color: var(--pb);
+	display: block;
+	margin: 1rem 0;
+	padding: 0;
+}
+
+h4 {
+	font-size: 2rem;
+	font-weight: 600;
+	margin: 1rem 0;
+}
+
+h5 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-top: 1rem;
+}
+
+a {
+	color: var(--rd);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--sb);
+	transition: ease-in-out 0.3s;
+}
+
+.App {
+	text-align: center;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 20rem 1fr;
+}
+
+/* Media Query ----------------------------------*/
+@media (max-width: 960px) {
+	h1 {
+		font-size: 6rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 4rem;
+		margin-top: 0;
+		margin-bottom: 2rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+		padding: 0 1rem;
+	}
+
+	h5 {
+		font-size: 1.25rem;
+		padding: 0 1rem;
+	}
+
+	.App {
+		grid-template-columns: 8rem 1fr;
+	}
+}
