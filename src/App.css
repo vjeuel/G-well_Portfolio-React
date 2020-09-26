@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Jura:wght@700&display=swap');
 
 :root {
-	--pb: #0c3559;
-	--sb: #138ba5;
-	--rd: #f21d1d;
+	/* --pb: #0c3559;
+	--sb: #138ba5; */
+	--pb: #0a2a40;
+	--sb: #13547f;
+	--tb: #26a8ff;
+	--rd: #ff1e08;
 	--wt: #f2f2f2;
+
 	--font1: 'Baskervville', serif;
 	--font2: 'Jura', sans-serif;
 }

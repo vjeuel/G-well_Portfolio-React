@@ -1,13 +1,12 @@
 .navGrid {
-	height: 100vh;
 	width: 20rem;
-	padding: 2.5rem;
 	margin: 0;
 }
 
 .mainGrid {
-	background-color: var(--pb);
-	height: 90%;
+	background: linear-gradient(-180deg, var(--pb) 40%, var(--sb));
+	height: 100vh;
+	padding: 2.5rem;
 	display: grid;
 	grid-template-rows: 25rem 15rem 5rem 5rem 5rem;
 	grid-row-gap: 2rem;
@@ -16,14 +15,73 @@
 	position: fixed;
 }
 
-.logo {
+/* .logo {
 	width: 15rem;
+} */
+
+.logoBox {
+	width: 15rem;
+	position: relative;
+}
+
+.g {
+	font-family: var(--font1);
+	font-size: 21rem;
+	color: var(--rd);
+	position: absolute;
+	bottom: 8.75rem;
+	left: 0;
+	margin: 0;
+}
+
+.well {
+	font-family: var(--font1);
+	font-size: 8.5rem;
+	color: var(--tb);
+	position: absolute;
+	bottom: 1.5rem;
+	left: 0;
+	margin: 0;
+}
+
+.webDeveloper {
+	font-family: var(--font2);
+	font-size: 1.98rem;
+	color: var(--wt);
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
+	margin: 0;
+}
+
+.jeuelBox {
+	width: 15rem;
+	height: 15rem;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* border: wheat solid 2px; */
 }
 
 .jeuel {
 	width: 15rem;
-	border: solid 8px var(--rd);
+	height: 15rem;
+	border: solid 4px var(--rd);
 	border-radius: 50%;
+}
+
+.jeuelCircle {
+	background: radial-gradient(var(--tb) 40%, var(--pb) 70%, var(--pb) 10%);
+	position: absolute;
+	top: -1.5rem;
+	left: -1.5rem;
+	width: 18rem;
+	height: 18rem;
+	border: 1px dashed var(--tb);
+	border-radius: 50%;
+	z-index: -1;
 }
 
 button {
@@ -31,19 +89,59 @@ button {
 	font-size: 2rem;
 	background-color: transparent;
 	color: var(--wt);
+	width: 15rem;
+	margin: 0 auto;
+	padding: 0;
 	border: none;
 	cursor: pointer;
 }
 
 button:hover {
-	color: var(--rd);
-	font-size: 2.25rem;
+	color: var(--sb);
 	border-radius: 5px;
 	transition: ease-in-out 0.5s;
 }
 
+button:active {
+	color: red;
+}
+
 .navLink {
 	color: var(--wt);
+}
+
+.navLittleCircles {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border: 2px solid var(--tb);
+	border-radius: 50%;
+	margin: 0 1rem 0.15rem;
+}
+
+button::selection .navLittleCircles {
+	border: 2px solid var(--rd);
+}
+
+.navUnderlineAbout,
+.navUnderlinePortfolio,
+.navUnderlineContact {
+	margin: 0.75rem auto 0;
+	border: 1px solid var(--tb);
+	border-radius: 1rem;
+	opacity: 1;
+}
+
+.navUnderlineAbout {
+	width: 6rem;
+}
+
+.navUnderlinePortfolio {
+	width: 9rem;
+}
+
+.navUnderlineContact {
+	width: 8rem;
 }
 
 /* Media Query */
@@ -59,7 +157,6 @@ button:hover {
 		width: 8rem;
 		padding: 2rem 1rem;
 		margin: 0;
-		overflow-y: scroll;
 	}
 
 	.mainGrid {

@@ -15,7 +15,7 @@ function About() {
 			</h2>
 			<h3>
 				Avid learner, Yoga enthusiast, Seasonal cyclist, <br /> Trilingual{' '}
-				<span style={{ color: 'var(--sb)' }}>(English, Portuguese and Spanish)</span>
+				<span style={{ color: 'var(--tb)' }}>(English, Portuguese and Spanish)</span>
 				,
 				<br />
 				Freelancer and{' '}
