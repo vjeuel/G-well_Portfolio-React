@@ -7,16 +7,30 @@
 	grid-template-rows: repeat(3, auto);
 	justify-content: flex-end;
 	align-content: flex-start;
+	overflow: hidden;
+	z-index: -10;
 }
 
 /* About  -------------------------------------*/
 .about {
 	background-color: var(--wt);
+	position: relative;
 }
 
 .jeuelMobile {
 	display: none;
 }
+
+/* .aboutBackground {
+	background-color: var(--tb);
+	width: 140%;
+	height: 120%;
+	position: absolute;
+	bottom: -50%;
+	right: -50%;
+	border-radius: 50%;
+	z-index: -1;
+} */
 
 /* Portfolio ------------------------------------*/
 .portfolioGrid {

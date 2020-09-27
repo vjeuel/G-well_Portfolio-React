@@ -16,28 +16,28 @@ function Navbar() {
 					<img src={jeuel} alt='Logo' className='jeuel' />
 					<div className='jeuelCircle'></div>
 				</div>
-				<NavLink to='/' exact className='navLink' activeClassName='activeNavLink'>
-					{/* <MenuItem> */}
-					<span className='navLittleCircles' activeClassName='activeLittleCircles'>
-						T
-					</span>
-					<span>about</span>
-					<span className='navLittleCircles'></span>
-					<div className='navUnderlineAbout'></div>
-					{/* </MenuItem> */}
-				</NavLink>
-				<NavLink to='/portfolio' className='navLink' activeClassName='activeNavLink'>
-					<span className='navLittleCircles'></span>
-					portfolio
-					<span className='navLittleCircles'></span>
-					<div className='navUnderlinePortfolio'></div>
-				</NavLink>
-				<NavLink to='/contact' className='navLink' activeClassName='activeNavLink'>
-					<span className='navLittleCircles'></span>
-					contact
-					<span className='navLittleCircles'></span>
-					<div className='navUnderlineContact'></div>
-				</NavLink>
+				<div className='navLinkBox'>
+					<NavLink to='/' exact className='navLink' activeClassName='activeNavLink'>
+						<span className='navLittleCircles' activeClassName='activeLittleCircles'></span>
+						<span>about</span>
+						<span className='navLittleCircles'></span>
+						<div className='navUnderlineAbout'></div>
+					</NavLink>
+					<div></div>
+					<NavLink to='/portfolio' className='navLink' activeClassName='activeNavLink'>
+						<span className='navLittleCircles'></span>
+						portfolio
+						<span className='navLittleCircles'></span>
+						<div className='navUnderlinePortfolio'></div>
+					</NavLink>
+					<div></div>
+					<NavLink to='/contact' className='navLink' activeClassName='activeNavLink'>
+						<span className='navLittleCircles'></span>
+						contact
+						<span className='navLittleCircles'></span>
+						<div className='navUnderlineContact'></div>
+					</NavLink>
+				</div>
 			</div>
 		</nav>
 	);
