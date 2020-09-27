@@ -28,8 +28,22 @@ function Navbar() {
 					</motion.p>
 				</div>
 				<div className='jeuelBox'>
-					<img src={jeuel} alt='Logo' className='jeuel' />
-					<div className='jeuelCircle'></div>
+					<motion.img
+						src={jeuel}
+						alt="Jeuel's Pic"
+						className='jeuel'
+						whileHover={{ scale: 1.1, duration: 1 }}
+						whileTap={{ scale: 0.9 }}
+					/>
+					<motion.div
+						className='jeuelCircle'
+						animate={{ opacity: 0.25, scale: 1.1 }}
+						transition={{
+							duration: 5,
+							repeat: Infinity,
+							repeatType: 'reverse',
+							delay: 3,
+						}}></motion.div>
 				</div>
 				<div className='navLinkBox'>
 					<NavLink to='/' exact className='navLink' activeClassName='activeNavLink'>
