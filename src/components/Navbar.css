@@ -4,7 +4,7 @@
 }
 
 .mainGrid {
-	background: linear-gradient(-180deg, var(--pb) 40%, var(--sb));
+	background: linear-gradient(-180deg, var(--pb) 40%, var(--sb) 80%, var(--sb));
 	height: 100vh;
 	padding: 2.5rem;
 	display: grid;
@@ -59,8 +59,6 @@
 	justify-content: center;
 	margin: 0;
 	padding: 0;
-
-	/* border: wheat solid 2px; */
 }
 
 .jeuel {
@@ -84,8 +82,8 @@
 
 .navLinkBox {
 	display: grid;
-
-	align-items: space-between;
+	align-content: space-between;
+	position: relative;
 }
 
 .navLink {
@@ -95,13 +93,20 @@
 	color: var(--wt);
 	width: 15rem;
 	margin: 0 auto;
-	padding: 0;
+	padding: 1rem 0;
 	border: none;
 	cursor: pointer;
+	border-bottom: 2px solid var(--sd);
 }
 
-.activeNavLink {
-	color: red;
+.navLink:hover {
+	color: var(--pb);
+	transition: ease-in-out 0.5s;
+}
+
+.navLink:hover .navLittleCircles {
+	border-color: var(--pb);
+	transition: ease-in-out 0.5s;
 }
 
 .navLittleCircles {
@@ -114,16 +119,36 @@
 }
 
 .activeLittleCircles {
-	border: 2px solid var(--rd);
+	border: 2px solid var(--wt);
+}
+
+.navLinkMenu {
+	padding-bottom: 1rem;
+	border-bottom: 2px solid var(--sd);
 }
 
 .navUnderlineAbout,
 .navUnderlinePortfolio,
 .navUnderlineContact {
 	margin: 0.75rem auto 0;
-	border: 1px solid var(--tb);
+	border: 1px solid var(--pb);
 	border-radius: 1rem;
+	opacity: 0;
+}
+
+.navLink:hover .navUnderlineAbout,
+.navLink:hover .navUnderlinePortfolio,
+.navLink:hover .navUnderlineContact {
 	opacity: 1;
+	transition: ease-in-out 0.5s;
+}
+
+.activeNavLink:visited .navUnderlineAbout,
+.activeNavLink:hover .navUnderlinePortfolio,
+.activeNavLink:hover .navUnderlineContact {
+	border-color: var(--rd);
+	opacity: 1;
+	transition: ease-in-out 0.5s;
 }
 
 .navUnderlineAbout {
@@ -136,6 +161,17 @@
 
 .navUnderlineContact {
 	width: 8rem;
+}
+
+.navLinkDivision {
+	width: 125%;
+	background-color: rgba(10, 42, 64, 0.2);
+	height: 1px;
+	margin: 0 auto;
+	position: relative;
+	left: -2rem;
+	/* border: 1px solid rgba(10, 42, 64, 0.15); */
+	box-shadow: 0px 0px 20px 2px var(--pb);
 }
 
 /* Media Query */
