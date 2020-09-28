@@ -14,23 +14,13 @@
 /* About  -------------------------------------*/
 .about {
 	background-color: var(--wt);
-	position: relative;
+	height: auto;
+	overflow: scroll;
 }
 
 .jeuelMobile {
 	display: none;
 }
-
-/* .aboutBackground {
-	background-color: var(--tb);
-	width: 140%;
-	height: 120%;
-	position: absolute;
-	bottom: -50%;
-	right: -50%;
-	border-radius: 50%;
-	z-index: -1;
-} */
 
 /* Portfolio ------------------------------------*/
 .portfolioGrid {
@@ -63,6 +53,7 @@
 /* Contact ------------------------------------*/
 .contact {
 	background-color: var(--wt);
+	overflow: scroll;
 }
 
 /* Media Query ----------------------------------*/
@@ -100,7 +91,6 @@
 
 	.cards {
 		height: 30rem;
-		/* border: none; */
 	}
 
 	.projectImg {

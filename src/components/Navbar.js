@@ -37,7 +37,7 @@ function Navbar() {
 					/>
 					<motion.div
 						className='jeuelCircle'
-						animate={{ opacity: 0.25, scale: 1.1 }}
+						animate={{ opacity: 0.25, scale: 1.09 }}
 						transition={{
 							duration: 5,
 							repeat: Infinity,
@@ -65,22 +65,6 @@ function Navbar() {
 						<span className='navLinkMenu'>contact</span>
 						<span className='navLittleCircles'></span>
 						<div className='navUnderlineContact'></div>
-					</NavLink>
-					<NavLink
-						to='/'
-						exact
-						className='navLink'
-						isActive={(match, location) => {
-							if (!match) {
-								return false;
-							}
-
-							// only consider an event active if its event id is an odd number
-							const eventID = parseInt(match.params.eventID);
-							return !isNaN(eventID) && eventID % 2 === 1;
-						}}>
-						Event 123
-						<div className='navUnderlineContact' isActive style={{ borderBottom: 'solid 2px red' }}></div>
 					</NavLink>
 				</div>
 			</div>

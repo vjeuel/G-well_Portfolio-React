@@ -24,7 +24,6 @@ function About() {
 				</span>{' '}
 				to be hired by your company.
 			</h3>
-			{/* <div className='aboutBackground'></div> */}
 		</div>
 	);
 }
