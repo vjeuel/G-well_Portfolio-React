@@ -23,7 +23,7 @@ function Navbar() {
 						className='webDeveloper'
 						initial={{ x: '-100vw' }}
 						animate={{ x: 0 }}
-						transition={{ delay: 1.5, duration: 1, type: 'spring', stiffness: 120 }}>
+						transition={{ delay: 1.5, type: 'spring', stiffness: 150, damping: 10, mass: 1.5 }}>
 						web developer
 					</motion.p>
 				</div>

@@ -16,7 +16,7 @@ function Contact() {
 							GitHub
 						</a>
 						, check out my{' '}
-						<a href={data.linkedin} target='_blank' rel='noopener noreferrer'>
+						<a href={data.linkedIn} target='_blank' rel='noopener noreferrer'>
 							LinkedIn
 						</a>{' '}
 						profile
@@ -42,7 +42,7 @@ function Contact() {
 const links = [
 	{
 		github: 'https://github.com/vjeuel',
-		linkedin: 'https://www.linkedin.com/in/vjeuel/',
+		linkedIn: 'https://www.linkedin.com/in/vjeuel/',
 		email: 'mailto:vjeuel@gmail.com',
 		phone: 'tel:2147837757',
 	},

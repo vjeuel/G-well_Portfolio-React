@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Pages.css';
 import jeuel from '../img/jeuel.png';
 
@@ -20,7 +20,7 @@ function About() {
 				<br />
 				Freelancer and{' '}
 				<span style={{ color: 'var(--rd)' }}>
-					<Link to='/contact'>READY</Link>
+					<NavLink to='/contact'>READY</NavLink>
 				</span>{' '}
 				to be hired by your company.
 			</h3>

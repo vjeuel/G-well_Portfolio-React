@@ -8,14 +8,13 @@
 	justify-content: flex-end;
 	align-content: flex-start;
 	overflow: hidden;
-	z-index: -10;
 }
 
 /* About  -------------------------------------*/
 .about {
 	background-color: var(--wt);
 	height: auto;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 .jeuelMobile {
@@ -53,7 +52,7 @@
 /* Contact ------------------------------------*/
 .contact {
 	background-color: var(--wt);
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 /* Media Query ----------------------------------*/
