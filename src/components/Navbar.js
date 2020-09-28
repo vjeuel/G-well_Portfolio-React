@@ -23,7 +23,7 @@ function Navbar() {
 						className='webDeveloper'
 						initial={{ x: '-100vw' }}
 						animate={{ x: 0 }}
-						transition={{ delay: 1.5, duration: 1, type: 'spring' }}>
+						transition={{ delay: 1.5, duration: 1, type: 'spring', stiffness: 120 }}>
 						web developer
 					</motion.p>
 				</div>
@@ -34,6 +34,7 @@ function Navbar() {
 						className='jeuel'
 						whileHover={{ scale: 1.1, duration: 1 }}
 						whileTap={{ scale: 0.9 }}
+						transition={{ type: 'spring', stiffness: 300 }}
 					/>
 					<motion.div
 						className='jeuelCircle'
