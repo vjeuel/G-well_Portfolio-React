@@ -43,34 +43,64 @@ function Navbar() {
 							duration: 5,
 							repeat: Infinity,
 							repeatType: 'reverse',
-							delay: 3,
+							delay: 5,
 						}}></motion.div>
 				</div>
-				<div className='navLinkBox'>
+				<motion.div className='navLinkBox' variants={navLinkBoxVariants} initial='hidden' animate='visible'>
 					<NavLink to='/' exact className='navLink' activeClassName='activeNavLink'>
-						<span className='navLittleCircles' activeClassName='activeLittleCircles'></span>
-						<span className='navLinkMenu'>about</span>
-						<span className='navLittleCircles'></span>
-						<div className='navUnderlineAbout'></div>
+						<motion.div variants={navLinkVariants}>
+							<span className='navLittleCircles' activeClassName='activeLittleCircles'></span>
+							<span className='navLinkMenu'>about</span>
+							<motion.span className='navLittleCircles'></motion.span>
+							<div className='navUnderlineAbout'></div>
+						</motion.div>
 					</NavLink>
 					<div className='navLinkDivision'></div>
 					<NavLink to='/portfolio' className='navLink' activeClassName='activeNavLink'>
-						<span className='navLittleCircles'></span>
-						<span className='navLinkMenu'>portfolio</span>
-						<span className='navLittleCircles'></span>
-						<div className='navUnderlinePortfolio'></div>
+						<motion.div variants={navLinkVariants}>
+							<span className='navLittleCircles'></span>
+							<span className='navLinkMenu'>portfolio</span>
+							<span className='navLittleCircles'></span>
+							<div className='navUnderlinePortfolio'></div>
+						</motion.div>
 					</NavLink>
 					<div className='navLinkDivision'></div>
 					<NavLink to='/contact' className='navLink' activeClassName='activeNavLink'>
-						<span className='navLittleCircles'></span>
-						<span className='navLinkMenu'>contact</span>
-						<span className='navLittleCircles'></span>
-						<div className='navUnderlineContact'></div>
+						<motion.div variants={navLinkVariants}>
+							<span className='navLittleCircles'></span>
+							<span className='navLinkMenu'>contact</span>
+							<span className='navLittleCircles'></span>
+							<div className='navUnderlineContact'></div>
+						</motion.div>
 					</NavLink>
-				</div>
+				</motion.div>
 			</div>
 		</nav>
 	);
 }
+
+const navLinkBoxVariants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: {
+			when: 'beforeChildren',
+			delay: 3,
+			staggerChildren: 0.5,
+		},
+	},
+};
+
+const navLinkVariants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: { duration: 1 },
+	},
+};
 
 export default Navbar;
