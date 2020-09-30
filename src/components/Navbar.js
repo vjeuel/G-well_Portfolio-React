@@ -41,8 +41,7 @@ function Navbar() {
 						animate={{ opacity: 0.25, scale: 1.09 }}
 						transition={{
 							duration: 5,
-							repeat: Infinity,
-							repeatType: 'reverse',
+							yoyo: Infinity,
 							delay: 5,
 						}}></motion.div>
 				</div>

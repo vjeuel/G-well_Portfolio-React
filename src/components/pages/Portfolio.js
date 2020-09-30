@@ -6,7 +6,7 @@ function Contact() {
 	return (
 		<main>
 			<div className='backgroundPortfolio'>
-				<div className='masonryGrid'>
+				<div className='portfolioGrid'>
 					{links.map((data) => {
 						return (
 							<motion.div className='cards' whileHover={{ scale: 1.025 }} transition={{ duration: 0.5 }}>
