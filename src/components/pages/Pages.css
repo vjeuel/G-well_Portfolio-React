@@ -21,20 +21,51 @@
 	display: none;
 }
 
-/* Portfolio ------------------------------------*/
-.portfolioGrid {
-	background-color: var(--pb);
-	padding: 5rem 5rem 5rem 10rem;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-	grid-template-rows: repeat(auto-fit, 35rem) 10rem;
-	grid-gap: 5rem;
+/* Portfolio -----------------------------------*/
+.backgroundPortfolio {
+	background-color: var(--card);
+	padding: 5rem;
 }
 
+.portfolioGrid {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 5rem;
+}
 .cards {
-	height: 35rem;
-	border: 1px solid var(--wt);
-	border-radius: 1rem;
+	max-width: 45rem;
+	min-width: 35rem;
+	height: auto;
+	display: grid;
+	justify-content: center;
+
+	padding: 2rem;
+	margin-bottom: 5rem;
+	border-radius: 5rem;
+	box-shadow: 0 6px 12px var(--cardDW), 0 -6px 12px var(--cardLW);
+}
+
+.cardsInfo {
+	margin-bottom: 3rem;
+	line-height: 1.5;
+}
+
+.cards h4 {
+	background-color: var(--sb);
+	padding: 2rem;
+	margin-top: 0;
+	color: var(--wt);
+	border-radius: 2rem;
+	box-shadow: inset 0 5px 5px var(--pb), inset 0 -5px 5px rgba(38, 168, 255, 0.75);
+}
+
+.cards a {
+	font-size: 2rem;
+}
+
+.cardsInfoTech {
+	margin-bottom: 0;
+	padding: 1rem;
 }
 
 .projectLinks {
@@ -42,11 +73,12 @@
 }
 
 .projectImg {
-	background-size: cover;
-	background-position: top center;
-	width: 100%;
-	height: 75%;
-	border-radius: 1rem;
+	object-fit: cover;
+	object-position: top;
+	width: 35rem;
+	height: 25rem;
+	border-radius: 5rem;
+	box-shadow: 0 8px 5px var(--cardDW), 0 -8px 5px var(--cardLW);
 }
 
 /* Contact ------------------------------------*/

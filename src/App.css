@@ -9,6 +9,11 @@
 	--rd: #ff1e08;
 	--wt: #f2f2f2;
 
+	/* Neumorphic Cards */
+	--card: #d9d9d9;
+	--cardLW: #ffffff;
+	--cardDW: #a6a6a6;
+
 	--font1: 'Baskervville', serif;
 	--font2: 'Jura', sans-serif;
 }
@@ -56,15 +61,19 @@ h3 {
 }
 
 h4 {
-	font-size: 2rem;
+	color: var(--pb);
+	font-size: 2.25rem;
 	font-weight: 600;
 	margin: 1rem 0;
 }
 
 h5 {
-	font-size: 1.5rem;
+	color: var(--pb);
+	font-size: 2rem;
 	font-weight: 400;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
 }
 
 a {

@@ -32,9 +32,9 @@ function Navbar() {
 						src={jeuel}
 						alt="Jeuel's Pic"
 						className='jeuel'
-						whileHover={{ scale: 1.1, duration: 1 }}
+						whileHover={{ scale: 1.1 }}
 						whileTap={{ scale: 0.9 }}
-						transition={{ type: 'spring', stiffness: 300 }}
+						transition={{ duration: 2, type: 'spring', stiffness: 300 }}
 					/>
 					<motion.div
 						className='jeuelCircle'
@@ -51,11 +51,14 @@ function Navbar() {
 						<motion.div variants={navLinkVariants}>
 							<span className='navLittleCircles' activeClassName='activeLittleCircles'></span>
 							<span className='navLinkMenu'>about</span>
-							<motion.span className='navLittleCircles'></motion.span>
+							<motion.span
+								className='navLittleCircles'
+								variants={hoverVariants}
+								whileHover='hover'></motion.span>
 							<div className='navUnderlineAbout'></div>
 						</motion.div>
 					</NavLink>
-					<div className='navLinkDivision'></div>
+
 					<NavLink to='/portfolio' className='navLink' activeClassName='activeNavLink'>
 						<motion.div variants={navLinkVariants}>
 							<span className='navLittleCircles'></span>
@@ -64,7 +67,7 @@ function Navbar() {
 							<div className='navUnderlinePortfolio'></div>
 						</motion.div>
 					</NavLink>
-					<div className='navLinkDivision'></div>
+
 					<NavLink to='/contact' className='navLink' activeClassName='activeNavLink'>
 						<motion.div variants={navLinkVariants}>
 							<span className='navLittleCircles'></span>
@@ -100,6 +103,14 @@ const navLinkVariants = {
 	visible: {
 		opacity: 1,
 		transition: { duration: 1 },
+	},
+};
+
+const hoverVariants = {
+	hover: {
+		whileHover: {
+			scale: 1.1,
+		},
 	},
 };
 

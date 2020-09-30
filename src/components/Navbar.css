@@ -149,16 +149,6 @@
 	width: 8rem;
 }
 
-.navLinkDivision {
-	width: 125%;
-	background-color: rgba(10, 42, 64, 0.2);
-	height: 1px;
-	margin: 0 auto;
-	position: relative;
-	left: -2rem;
-	box-shadow: 0px 0px 20px 2px var(--pb);
-}
-
 /* Navbar Mobile ------------------------------*/
 @media (max-width: 600px) {
 	.navGrid {
@@ -210,10 +200,6 @@
 	}
 
 	.navLittleCircles {
-		display: none;
-	}
-
-	.navLinkDivision {
 		display: none;
 	}
 }
