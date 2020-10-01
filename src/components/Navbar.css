@@ -5,7 +5,7 @@
 
 .mainGrid {
 	background: linear-gradient(-180deg, var(--pb) 40%, var(--sb) 80%, var(--sb));
-	height: 100vh;
+	height: 100%;
 	padding: 2.5rem;
 	display: grid;
 	grid-template-rows: 25rem 15rem 1fr;

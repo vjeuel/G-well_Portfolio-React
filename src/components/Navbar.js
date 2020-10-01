@@ -47,31 +47,28 @@ function Navbar() {
 				</div>
 				<motion.div className='navLinkBox' variants={navLinkBoxVariants} initial='hidden' animate='visible'>
 					<NavLink to='/' exact className='navLink' activeClassName='activeNavLink'>
-						<motion.div variants={navLinkVariants}>
-							<span className='navLittleCircles' activeClassName='activeLittleCircles'></span>
+						<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
+							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
 							<span className='navLinkMenu'>about</span>
-							<motion.span
-								className='navLittleCircles'
-								variants={hoverVariants}
-								whileHover='hover'></motion.span>
+							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
 							<div className='navUnderlineAbout'></div>
 						</motion.div>
 					</NavLink>
 
 					<NavLink to='/portfolio' className='navLink' activeClassName='activeNavLink'>
-						<motion.div variants={navLinkVariants}>
-							<span className='navLittleCircles'></span>
+						<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
+							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
 							<span className='navLinkMenu'>portfolio</span>
-							<span className='navLittleCircles'></span>
+							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
 							<div className='navUnderlinePortfolio'></div>
 						</motion.div>
 					</NavLink>
 
 					<NavLink to='/contact' className='navLink' activeClassName='activeNavLink'>
-						<motion.div variants={navLinkVariants}>
-							<span className='navLittleCircles'></span>
+						<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
+							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
 							<span className='navLinkMenu'>contact</span>
-							<span className='navLittleCircles'></span>
+							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
 							<div className='navUnderlineContact'></div>
 						</motion.div>
 					</NavLink>
@@ -89,8 +86,8 @@ const navLinkBoxVariants = {
 		opacity: 1,
 		transition: {
 			when: 'beforeChildren',
-			delay: 3,
-			staggerChildren: 0.5,
+			delay: 2,
+			staggerChildren: 0.4,
 		},
 	},
 };
@@ -107,9 +104,16 @@ const navLinkVariants = {
 
 const hoverVariants = {
 	hover: {
-		whileHover: {
-			scale: 1.1,
-		},
+		scale: 1.1,
+		color: '#26a8ff',
+		transition: { duration: 0.5 },
+	},
+};
+
+const hoverVariantsLittleCircles = {
+	hover: {
+		borderColor: '#ff1e08',
+		transition: { duration: 0.5 },
 	},
 };
 
