@@ -118,11 +118,8 @@
 		padding: 0.5rem;
 	}
 	.portfolioGrid {
-		padding: 2rem;
+		grid-template-columns: 1fr;
 		grid-gap: 2rem;
-	}
-
-	.cards {
-		width: 15rem;
+		padding: 2rem;
 	}
 }
