@@ -48,28 +48,34 @@ function Navbar() {
 				<motion.div className='navLinkBox' variants={navLinkBoxVariants} initial='hidden' animate='visible'>
 					<NavLink to='/' exact className='navLink' activeClassName='activeNavLink'>
 						<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
-							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
-							<span className='navLinkMenu'>about</span>
-							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
-							<div className='navUnderlineAbout'></div>
+							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
+							<span className='navLinkMenu' activeClassName='activeNavLink'>
+								about
+							</span>
+							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
+							<motion.div className='navUnderlineAbout'></motion.div>
 						</motion.div>
 					</NavLink>
 
 					<NavLink to='/portfolio' className='navLink' activeClassName='activeNavLink'>
 						<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
-							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
-							<span className='navLinkMenu'>portfolio</span>
-							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
-							<div className='navUnderlinePortfolio'></div>
+							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
+							<span className='navLinkMenu' activeClassName='activeNavLink'>
+								portfolio
+							</span>
+							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
+							<motion.div className='navUnderlinePortfolio'></motion.div>
 						</motion.div>
 					</NavLink>
 
 					<NavLink to='/contact' className='navLink' activeClassName='activeNavLink'>
 						<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
-							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
-							<span className='navLinkMenu'>contact</span>
-							<motion.span className='navLittleCircles' variants={hoverVariantsLittleCircles}></motion.span>
-							<div className='navUnderlineContact'></div>
+							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
+							<span className='navLinkMenu' activeClassName='activeNavLink'>
+								contact
+							</span>
+							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
+							<motion.div className='navUnderlineContact'></motion.div>
 						</motion.div>
 					</NavLink>
 				</motion.div>
@@ -110,10 +116,18 @@ const hoverVariants = {
 	},
 };
 
-const hoverVariantsLittleCircles = {
+const hoverLittleCirclesVariants = {
 	hover: {
 		borderColor: '#ff1e08',
-		transition: { duration: 0.5 },
+		opacity: [0, 1],
+		scale: [1, 1.5, 1],
+		transition: { duration: 0.5, yoyo: 2 },
+	},
+	visible: {
+		opacity: 1,
+	},
+	hidden: {
+		opacity: 1,
 	},
 };
 
