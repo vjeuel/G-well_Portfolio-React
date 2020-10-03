@@ -12,7 +12,7 @@ function Contact() {
 							<motion.div className='cards' whileHover={{ scale: 1.025 }} transition={{ duration: 0.5 }}>
 								<a href={data.href} target='_blank' rel='noopener noreferrer' className='projectLinks'>
 									<motion.h4>{data.title}</motion.h4>
-									<h5>{data.about}</h5>
+									{/* <h5>{data.about}</h5> */}
 									<motion.a
 										href={data.github}
 										target='_blank'
@@ -25,13 +25,21 @@ function Contact() {
 											backgroundColor: '#ff1e08',
 											color: '#f2f2f2',
 											scale: 1.025,
-											boxShadow: 'inset 0 5px 5px  #400702, inset 0 -5px 5px #ffa9a1',
+											boxShadow: 'inset 0 2px 5px #400702, inset 0 -3px 5px #f2f2f2',
 											transition: { duration: 0 },
 										}}>
 										GitHub Repo
 									</motion.a>
 									<h5 className='cardsInfoTech'>{data.technology}</h5>
-									<img src={data.url} alt={data.id} className='projectImg' />
+									<div className='projectImgBox'>
+										<motion.img
+											src={data.url}
+											alt={data.id}
+											className='projectImg'
+											whileHover={{ opacity: 0 }}
+										/>
+										<h5>{data.about}</h5>
+									</div>
 								</a>
 							</motion.div>
 						);
