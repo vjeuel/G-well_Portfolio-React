@@ -61,10 +61,11 @@
 	margin-top: 0;
 	color: var(--wt);
 	border-radius: 5rem;
-	box-shadow: inset 0 5px 5px var(--pb), inset 0 -5px 5px rgba(38, 168, 255, 0.75);
+	box-shadow: inset 0 5px 5px var(--pb), inset 0 -4px 5px rgba(204, 233, 255, 0.75);
 }
 
 .cards h5 {
+	line-height: 1.25;
 	padding: 0 2rem;
 	margin: 0;
 }
@@ -90,7 +91,6 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	box-shadow: 0 8px 5px var(--cardDW), 0 -8px 5px var(--cardLW);
 	border-radius: 5rem;
 }
 

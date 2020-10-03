@@ -38,7 +38,7 @@ function Navbar() {
 					/>
 					<motion.div
 						className='jeuelCircle'
-						animate={{ opacity: 0.25, scale: 1.09 }}
+						animate={{ opacity: 0.25, scale: [1, 1, 1.08, 1, 1, 1.05, 1] }}
 						transition={{
 							duration: 5,
 							yoyo: Infinity,
