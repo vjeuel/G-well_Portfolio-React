@@ -37,20 +37,25 @@
 	max-width: 45rem;
 	min-width: 25rem;
 	height: auto;
-	display: grid;
-	justify-content: center;
 	padding: 2rem;
 	border-radius: 5rem;
 	box-shadow: 0 6px 12px var(--cardDW), 0 -6px 12px var(--cardLW);
 }
 
-.cardsInfo {
-	margin-bottom: 3rem;
-	line-height: 1.5;
+.projectLinks {
+	color: var(--wt);
+	height: 100%;
+	display: grid;
+	grid-template-rows: repeat(5, auto);
+	grid-gap: 1.5rem;
+	align-content: space-between;
+	justify-items: center;
 }
 
 .cards h4 {
+	line-height: 1.5;
 	background-color: var(--sb);
+	width: 100%;
 	padding: 2rem;
 	margin-top: 0;
 	color: var(--wt);
@@ -58,17 +63,22 @@
 	box-shadow: inset 0 5px 5px var(--pb), inset 0 -5px 5px rgba(38, 168, 255, 0.75);
 }
 
-.cards a {
+.cards h5 {
+	padding: 0 2rem;
+	margin: 0;
+}
+
+.gitHub {
 	font-size: 2rem;
+	width: 20rem;
+	padding: 1rem;
+	margin: 2rem;
+	border-radius: 5rem;
 }
 
 .cardsInfoTech {
 	margin-bottom: 0;
 	padding: 1rem;
-}
-
-.projectLinks {
-	color: var(--wt);
 }
 
 .projectImg {

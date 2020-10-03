@@ -11,15 +11,27 @@ function Contact() {
 						return (
 							<motion.div className='cards' whileHover={{ scale: 1.025 }} transition={{ duration: 0.5 }}>
 								<a href={data.href} target='_blank' rel='noopener noreferrer' className='projectLinks'>
-									<div className='cardsInfo'>
-										<h4>{data.title}</h4>
-										<h5>{data.about}</h5>
-										<a href={data.github} target='_blank' rel='noopener noreferrer'>
-											GitHub Repo
-										</a>
-									</div>
-									<img src={data.url} alt={data.id} className='projectImg' />
+									<motion.h4>{data.title}</motion.h4>
+									<h5>{data.about}</h5>
+									<motion.a
+										href={data.github}
+										target='_blank'
+										rel='noopener noreferrer'
+										className='gitHub'
+										initial={{
+											boxShadow: '0 6px 12px #a6a6a6, 0 -6px 12px #fff',
+										}}
+										whileHover={{
+											backgroundColor: '#ff1e08',
+											color: '#f2f2f2',
+											scale: 1.025,
+											boxShadow: 'inset 0 5px 5px  #400702, inset 0 -5px 5px #ffa9a1',
+											transition: { duration: 0 },
+										}}>
+										GitHub Repo
+									</motion.a>
 									<h5 className='cardsInfoTech'>{data.technology}</h5>
+									<img src={data.url} alt={data.id} className='projectImg' />
 								</a>
 							</motion.div>
 						);
