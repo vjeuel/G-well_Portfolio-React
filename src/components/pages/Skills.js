@@ -24,10 +24,13 @@ function Skills() {
 				<div className='skillsGrid'>
 					{GraphDes.map((data) => {
 						return (
-							<div className='cardsSkills'>
+							<motion.div
+								className='cardsSkills'
+								animate={{ boxShadow: '0 6px 12px #a6a6a6, 0 -6px 12px #fff' }}
+								transition={{ delay: 0.5, duration: 1 }}>
 								<img src={data.logo} alt={data.title} className='skillsImg'></img>
 								<h4 className='cardsSkillsTitle'>{data.title}</h4>
-							</div>
+							</motion.div>
 						);
 					})}
 				</div>
