@@ -66,6 +66,10 @@ const links = [
 		logo: './img/skills/bootstrap-4.svg',
 	},
 	{
+		title: 'Materialize',
+		logo: './img/skills/materialize.svg',
+	},
+	{
 		title: 'Material UI',
 		logo: './img/skills/material-ui-1.svg',
 	},
