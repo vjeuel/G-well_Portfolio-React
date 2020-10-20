@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import Portfolio from './components/pages/Portfolio';
+import Skills from './components/pages/Skills';
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 				<Switch>
 					<Route path='/' exact component={withRouter(About)} />
 					<Route path='/portfolio' component={withRouter(Portfolio)} />
+					<Route path='/skills' component={withRouter(Skills)} />
 					<Route path='/contact' component={withRouter(Contact)} />
 				</Switch>
 			</div>

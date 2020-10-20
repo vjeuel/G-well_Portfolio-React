@@ -21,6 +21,41 @@
 	display: none;
 }
 
+/* Skills -----------------------------------*/
+.backgroundSkills {
+	background-color: var(--wt);
+	padding: 5rem;
+}
+
+.skillsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	grid-gap: 5rem;
+	justify-items: center;
+}
+
+.cardsSkills {
+	width: 20rem;
+	height: 20rem;
+	padding: 2rem;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	border-radius: 2.5rem;
+	/* border: solid 2px var(--tb); */
+	box-shadow: 0 0 10px var(--tb);
+}
+
+.cardsSkillsTitle {
+	align-self: flex-end;
+}
+
+.skillsImg {
+	width: 10rem;
+	height: auto;
+	align-self: center;
+}
+
 /* Portfolio -----------------------------------*/
 .backgroundPortfolio {
 	background-color: var(--card);

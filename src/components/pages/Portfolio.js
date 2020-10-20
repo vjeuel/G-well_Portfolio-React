@@ -2,7 +2,7 @@ import React from 'react';
 import './Pages.css';
 import { motion } from 'framer-motion';
 
-function Contact() {
+function Portfolio() {
 	return (
 		<main>
 			<div className='backgroundPortfolio'>
@@ -252,4 +252,4 @@ const links = [
 	},
 ];
 
-export default Contact;
+export default Portfolio;
