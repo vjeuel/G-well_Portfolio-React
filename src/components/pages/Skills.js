@@ -82,12 +82,12 @@ const links = [
 		logo: './img/skills/fontawesome-1.svg',
 	},
 	{
-		title: 'Photoshop',
-		logo: './img/skills/photoshop-cc-4.svg',
-	},
-	{
 		title: 'Illustrator',
 		logo: './img/skills/adobe-illustrator-cc.svg',
+	},
+	{
+		title: 'Photoshop',
+		logo: './img/skills/photoshop-cc-4.svg',
 	},
 	{
 		title: 'Affinity Designer',
