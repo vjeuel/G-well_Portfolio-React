@@ -11,6 +11,7 @@ function About() {
 			<h2>
 				Graphic Designer, <br />
 				Full Stack Web Developer
+				<br /> with focus on Front-End
 				<br /> in Dallas, TX.
 			</h2>
 			<h3>
