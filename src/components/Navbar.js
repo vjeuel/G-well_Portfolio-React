@@ -102,8 +102,9 @@ const navLinkBoxVariants = {
 	visible: {
 		opacity: 1,
 		transition: {
-			when: 'beforeChildren',
+			duration: 2,
 			delay: 2,
+			when: 'beforeChildren',
 			staggerChildren: 0.4,
 		},
 	},

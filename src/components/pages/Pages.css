@@ -23,8 +23,13 @@
 
 /* Skills -----------------------------------*/
 .backgroundSkills {
-	background-color: var(--wt);
-	padding: 5rem;
+	background-color: var(--card);
+	padding: 1rem 5rem;
+}
+
+.skillsTitle {
+	text-align: center;
+	margin-top: 8rem;
 }
 
 .skillsGrid {
@@ -43,7 +48,7 @@
 	align-items: center;
 	border-radius: 2.5rem;
 	/* border: solid 2px var(--tb); */
-	box-shadow: 0 0 10px var(--tb);
+	/* box-shadow: 0 6px 12px var(--cardDW), 0 -6px 12px var(--cardLW); */
 }
 
 .cardsSkillsTitle {

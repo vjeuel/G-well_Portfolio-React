@@ -1,12 +1,28 @@
 import React from 'react';
 import './Pages.css';
+import { motion } from 'framer-motion';
 
 function Skills() {
 	return (
 		<main>
 			<div className='backgroundSkills'>
+				<h2 className='skillsTitle'>Web Development</h2>
 				<div className='skillsGrid'>
-					{links.map((data) => {
+					{WebDev.map((data) => {
+						return (
+							<motion.div
+								className='cardsSkills'
+								animate={{ boxShadow: '0 6px 12px #a6a6a6, 0 -6px 12px #fff' }}
+								transition={{ delay: 0.5, duration: 1 }}>
+								<img src={data.logo} alt={data.title} className='skillsImg'></img>
+								<h4 className='cardsSkillsTitle'>{data.title}</h4>
+							</motion.div>
+						);
+					})}
+				</div>
+				<h2 className='skillsTitle'>Graphic Design</h2>
+				<div className='skillsGrid'>
+					{GraphDes.map((data) => {
 						return (
 							<div className='cardsSkills'>
 								<img src={data.logo} alt={data.title} className='skillsImg'></img>
@@ -20,7 +36,7 @@ function Skills() {
 	);
 }
 
-const links = [
+const WebDev = [
 	{
 		title: 'HTML 5',
 		logo: './img/skills/html-5.svg',
@@ -81,6 +97,9 @@ const links = [
 		title: 'Font Awesome',
 		logo: './img/skills/fontawesome-1.svg',
 	},
+];
+
+const GraphDes = [
 	{
 		title: 'Illustrator',
 		logo: './img/skills/adobe-illustrator-cc.svg',
