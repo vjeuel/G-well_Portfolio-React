@@ -34,6 +34,20 @@ function Skills() {
 						);
 					})}
 				</div>
+				<h2 className='skillsTitle'>Other Technologies</h2>
+				<div className='skillsGrid'>
+					{OthTech.map((data) => {
+						return (
+							<motion.div
+								className='cardsSkills'
+								animate={{ boxShadow: '0 6px 12px #a6a6a6, 0 -6px 12px #fff' }}
+								transition={{ delay: 0.5, duration: 1 }}>
+								<img src={data.logo} alt={data.title} className='skillsImg'></img>
+								<h4 className='cardsSkillsTitle'>{data.title}</h4>
+							</motion.div>
+						);
+					})}
+				</div>
 			</div>
 		</main>
 	);
@@ -122,6 +136,25 @@ const GraphDes = [
 	{
 		title: 'Affinity Publisher',
 		logo: './img/skills/affinity-publisher.svg',
+	},
+];
+
+const OthTech = [
+	{
+		title: 'Zoom',
+		logo: './img/skills/zoom-communications-logo.svg',
+	},
+	{
+		title: 'Slack',
+		logo: './img/skills/slack-new-logo.svg',
+	},
+	{
+		title: 'Google Sheets',
+		logo: './img/skills/Google_Sheets_logo.svg',
+	},
+	{
+		title: 'Google Docs',
+		logo: './img/skills/google-docs-icon-2.svg',
 	},
 ];
 
