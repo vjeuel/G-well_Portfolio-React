@@ -191,14 +191,23 @@
 		display: none;
 	}
 
+	.navLinkBox {
+		width: 6rem;
+	}
+
 	.navLink {
 		transform: rotate(270deg);
-		width: 12rem;
-		height: 12rem;
+		width: 11rem;
+		height: 11rem;
 	}
 
 	.navLittleCircles {
 		display: none;
+	}
+
+	.navLinkMenu {
+		font-size: 1.75rem;
+		padding: 0;
 	}
 }
 
@@ -210,7 +219,9 @@
 
 	.mainGrid {
 		width: 20rem;
+		padding: 1.5rem;
 		grid-template-rows: 16.5rem 1fr;
+		grid-gap: 2rem;
 	}
 
 	.logoBox {
@@ -236,5 +247,17 @@
 
 	.jeuelBox {
 		display: none;
+	}
+
+	.navLittleCircles {
+		display: none;
+	}
+
+	.navLink {
+		padding: 0;
+	}
+
+	.navLinkMenu {
+		padding: 0;
 	}
 }

@@ -47,8 +47,6 @@
 	justify-items: center;
 	align-items: center;
 	border-radius: 2.5rem;
-	/* border: solid 2px var(--tb); */
-	/* box-shadow: 0 6px 12px var(--cardDW), 0 -6px 12px var(--cardLW); */
 }
 
 .cardsSkillsTitle {
