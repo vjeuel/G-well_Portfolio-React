@@ -63,6 +63,10 @@ const WebDev = [
 		logo: './img/skills/css-5.svg',
 	},
 	{
+		title: 'SASS',
+		logo: './img/skills/sass-1.svg',
+	},
+	{
 		title: 'JavaScript',
 		logo: './img/skills/javascript.svg',
 	},
