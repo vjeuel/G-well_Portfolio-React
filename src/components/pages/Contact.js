@@ -1,6 +1,7 @@
 import React from 'react';
 import './Pages.css';
 import Resume from '../img/ResumeJeuel.pdf';
+import ResumeDoc from '../img/ResumeDec20.pdf';
 
 function Contact() {
 	return (
@@ -33,7 +34,9 @@ function Contact() {
 				<a href={Resume} target='_blank' rel='noopener noreferrer'>
 					resume
 				</a>{' '}
-				too!
+				<a href={ResumeDoc} style={{ color: '#0a2a40' }} target='_blank' rel='noopener noreferrer'>
+					too!
+				</a>{' '}
 			</h3>
 		</div>
 	);
