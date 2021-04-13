@@ -6,52 +6,13 @@ function Portfolio() {
 	return (
 		<main>
 			<div className='backgroundPortfolio'>
-				<div className='portfolioOptions'>
-					<motion.div>
-						<motion.a
-							// href={data.github}
-							target='_blank'
-							rel='noopener noreferrer'
-							className='gitHub'
-							initial={{
-								boxShadow: '0 6px 12px #a6a6a6, 0 -6px 12px #fff',
-							}}
-							whileHover={{
-								backgroundColor: '#ff1e08',
-								color: '#f2f2f2',
-								scale: 1.025,
-								boxShadow: 'inset 0 2px 5px #400702, inset 0 -3px 5px #f2f2f2',
-								transition: { duration: 0 },
-							}}>
-							Web Development
-						</motion.a>
-
-						<motion.a
-							// href={data.github}
-							target='_blank'
-							rel='noopener noreferrer'
-							className='gitHub'
-							initial={{
-								boxShadow: '0 6px 12px #a6a6a6, 0 -6px 12px #fff',
-							}}
-							whileHover={{
-								backgroundColor: '#ff1e08',
-								color: '#f2f2f2',
-								scale: 1.025,
-								boxShadow: 'inset 0 2px 5px #400702, inset 0 -3px 5px #f2f2f2',
-								transition: { duration: 0 },
-							}}>
-							Graphic Design
-						</motion.a>
-					</motion.div>
-				</div>
 				<div className='portfolioGrid'>
 					{links.map((data) => {
 						return (
 							<motion.div className='cards' variants={cardsVariants} initial='initial' whileHover='hover'>
 								<a href={data.href} target='_blank' rel='noopener noreferrer' className='projectLinks'>
 									<motion.h4>{data.title}</motion.h4>
-									<h5>{data.about}</h5>
+									{/* <h5>{data.about}</h5> */}
 									<motion.a
 										href={data.github}
 										target='_blank'
