@@ -11,9 +11,8 @@ function Portfolio() {
 					{links.map((data) => {
 						return (
 							<motion.div>
-								<NavLink to={data.link} className='navLink' activeClassName='activeNavLink'>
+								<NavLink to={data.link} activeClassName='activeNavLink'>
 									<motion.a
-										// href={data.link}
 										target='_blank'
 										rel='noopener noreferrer'
 										className='PortfolioButtons'

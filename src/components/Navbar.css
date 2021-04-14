@@ -8,11 +8,11 @@
 	height: 100%;
 	padding: 2.5rem;
 	display: grid;
-	grid-template-rows: 25rem 15rem 1fr;
+	grid-template-rows: 25rem 20rem 1fr;
 	grid-gap: 4rem;
-	justify-content: center;
-	align-content: space-between;
+	/* justify-content: center; */
 	position: fixed;
+
 }
 
 .logoBox {
@@ -82,8 +82,8 @@
 
 .navLinkBox {
 	display: grid;
-	align-content: start;
-	position: relative;
+	align-content: flex-start;
+   align-items: center;
 }
 
 .navLink {
@@ -130,8 +130,6 @@
 
 .activeNavLink {
 	color: var(--tb);
-	/* border-color: var(--rd); */
-	/* opacity: 1; */
 	transition: ease-in-out 0.5s;
 }
 

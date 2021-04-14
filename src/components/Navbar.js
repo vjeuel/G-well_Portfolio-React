@@ -46,9 +46,9 @@ function Navbar() {
 						}}></motion.div>
 				</div>
 
-				{links.map((data) => {
-					return (
-						<motion.div className='navLinkBox' variants={navLinkBoxVariants} initial='hidden' animate='visible'>
+				<motion.div className='navLinkBox' variants={navLinkBoxVariants} initial='hidden' animate='visible'>
+					{links.map((data) => {
+						return (
 							<NavLink to={data.link} exact className='navLink' activeClassName='activeNavLink'>
 								<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
 									<motion.span
@@ -63,9 +63,9 @@ function Navbar() {
 									<motion.div className='navUnderlineAbout'></motion.div>
 								</motion.div>
 							</NavLink>
-						</motion.div>
-					);
-				})}
+						);
+					})}
+				</motion.div>
 			</div>
 		</nav>
 	);
