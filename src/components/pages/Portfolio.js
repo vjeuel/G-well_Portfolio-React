@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 function Portfolio() {
 	return (
 		<main>
-			<div className='backgroundPortfolio'>
+			<div className='backgroundPortfolioMain'>
 				<div className='portfolioOptions'>
 					<motion.div>
 						<NavLink to='/portfolio-web' className='navLink' activeClassName='activeNavLink'>

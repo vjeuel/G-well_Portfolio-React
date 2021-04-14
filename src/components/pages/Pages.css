@@ -62,7 +62,11 @@
 
 
 /* Portfolio -----------------------------------*/
-
+.backgroundPortfolioMain {
+   background-color: var(--card);
+	height: 100vh;
+   padding: 5rem;
+}
 
 /* Portfolio - Web and Graphic */
 .backgroundPortfolio {

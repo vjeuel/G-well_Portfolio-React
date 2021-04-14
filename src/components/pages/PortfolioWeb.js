@@ -12,7 +12,7 @@ function Portfolio() {
 							<motion.div className='cards' variants={cardsVariants} initial='initial' whileHover='hover'>
 								<a href={data.href} target='_blank' rel='noopener noreferrer' className='projectLinks'>
 									<motion.h4>{data.title}</motion.h4>
-									{/* <h5>{data.about}</h5> */}
+									<h5>{data.about}</h5>
 									<motion.a
 										href={data.github}
 										target='_blank'
