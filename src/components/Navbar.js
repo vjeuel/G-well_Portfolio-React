@@ -66,23 +66,6 @@ function Navbar() {
 							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
 							<motion.div className='navUnderlinePortfolio'></motion.div>
 						</motion.div>
-						<NavLink to='/portfolio-web' className='navLinkSubMenu' activeClassName='activeNavLink'>
-							<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
-								<span className='navLinkMenu' activeClassName='activeNavLink'>
-									web
-								</span>
-								<motion.div className='navUnderlinePortfolio'></motion.div>
-							</motion.div>
-						</NavLink>
-
-						<NavLink to='/portfolio-graphic' className='navLinkSubMenu' activeClassName='activeNavLink'>
-							<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
-								<span className='navLinkMenu' activeClassName='activeNavLink'>
-									graphic
-								</span>
-								<motion.div className='navUnderlinePortfolio'></motion.div>
-							</motion.div>
-						</NavLink>
 					</NavLink>
 
 					<NavLink to='/skills' className='navLink' activeClassName='activeNavLink'>
