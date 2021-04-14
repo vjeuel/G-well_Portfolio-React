@@ -102,16 +102,6 @@
 	color: var(--wt);
 }
 
-.navLinkSubMenu {
-   font-family: var(--font2);
-	font-size: 1.75rem;
-	color: var(--wt);
-	margin: 0 auto;
-	border: none;
-	cursor: pointer;
-	border-bottom: 2px solid var(--sd);
-}
-
 .navLittleCircles {
 	display: inline-block;
 	width: 8px;

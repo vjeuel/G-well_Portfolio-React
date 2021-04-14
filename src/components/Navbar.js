@@ -45,55 +45,50 @@ function Navbar() {
 							delay: 5,
 						}}></motion.div>
 				</div>
-				<motion.div className='navLinkBox' variants={navLinkBoxVariants} initial='hidden' animate='visible'>
-					<NavLink to='/' exact className='navLink' activeClassName='activeNavLink'>
-						<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
-							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
-							<span className='navLinkMenu' activeClassName='activeNavLink'>
-								about
-							</span>
-							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
-							<motion.div className='navUnderlineAbout'></motion.div>
-						</motion.div>
-					</NavLink>
 
-					<NavLink to='/portfolio' className='navLink' activeClassName='activeNavLink'>
-						<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
-							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
-							<span className='navLinkMenu' activeClassName='activeNavLink'>
-								portfolio
-							</span>
-							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
-							<motion.div className='navUnderlinePortfolio'></motion.div>
+				{links.map((data) => {
+					return (
+						<motion.div className='navLinkBox' variants={navLinkBoxVariants} initial='hidden' animate='visible'>
+							<NavLink to={data.link} exact className='navLink' activeClassName='activeNavLink'>
+								<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
+									<motion.span
+										className='navLittleCircles'
+										variants={hoverLittleCirclesVariants}></motion.span>
+									<span className='navLinkMenu' activeClassName='activeNavLink'>
+										{data.menu}
+									</span>
+									<motion.span
+										className='navLittleCircles'
+										variants={hoverLittleCirclesVariants}></motion.span>
+									<motion.div className='navUnderlineAbout'></motion.div>
+								</motion.div>
+							</NavLink>
 						</motion.div>
-					</NavLink>
-
-					<NavLink to='/skills' className='navLink' activeClassName='activeNavLink'>
-						<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
-							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
-							<span className='navLinkMenu' activeClassName='activeNavLink'>
-								skills
-							</span>
-							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
-							<motion.div className='navUnderlinePortfolio'></motion.div>
-						</motion.div>
-					</NavLink>
-
-					<NavLink to='/contact' className='navLink' activeClassName='activeNavLink'>
-						<motion.div variants={(navLinkVariants, hoverVariants)} whileHover='hover'>
-							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
-							<span className='navLinkMenu' activeClassName='activeNavLink'>
-								contact
-							</span>
-							<motion.span className='navLittleCircles' variants={hoverLittleCirclesVariants}></motion.span>
-							<motion.div className='navUnderlineContact'></motion.div>
-						</motion.div>
-					</NavLink>
-				</motion.div>
+					);
+				})}
 			</div>
 		</nav>
 	);
 }
+
+const links = [
+	{
+		menu: 'about',
+		link: '/',
+	},
+	{
+		menu: 'portfolio',
+		link: '/portfolio',
+	},
+	{
+		menu: 'skills',
+		link: '/skills',
+	},
+	{
+		menu: 'contact',
+		link: '/contact',
+	},
+];
 
 const navLinkBoxVariants = {
 	hidden: {

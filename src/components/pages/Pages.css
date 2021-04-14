@@ -64,8 +64,27 @@
 /* Portfolio -----------------------------------*/
 .backgroundPortfolioMain {
    background-color: var(--card);
+   display: flex;
 	height: 100vh;
    padding: 5rem;
+   align-items: center;
+}
+
+.portfolioGridMain {
+   display: grid;
+   height: 50rem;
+   width: 100%;
+   grid-template-rows: repeat(2, 1fr);
+   align-items: center;
+   grid-gap: 5rem;
+}
+
+.PortfolioButtons {
+	font-size: 2.5rem;
+	padding: 2.5rem 5rem;
+	margin: 5rem;
+	border-radius: 5rem;
+
 }
 
 /* Portfolio - Web and Graphic */
@@ -79,6 +98,7 @@
 	grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
 	grid-gap: 5rem;
 	justify-items: center;
+
 }
 
 .cards {
