@@ -75,37 +75,37 @@ const h5Variants = {
 const links = [
 	{
 		href: '/tonys-pizza',
-		url: './img/portfolio/graphic/chief.png',
+		url: './img/portfolio/graphic/tonys/box_top.png',
 		title: "Tony's Pizza and Pasta",
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
 	{
 		href: '/carmines-pizza',
-		url: './img/portfolio/graphic/chief.png',
+		url: './img/portfolio/graphic/carmines/menu_latest.png',
 		title: "Carmine's Pizzeria",
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
 	{
 		href: '/bliss-bites',
-		url: './img/portfolio/graphic/chief.png',
+		url: './img/portfolio/graphic/bliss_bites/bliss_letterhead.png',
 		title: 'Bliss Bites',
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
 	{
 		href: '/real-garden',
-		url: './img/portfolio/graphic/chief.png',
+		url: './img/portfolio/graphic/real_garden/flyer.png',
 		title: 'Real Garden',
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
 	{
 		href: '/logos',
-		url: './img/portfolio/graphic/chief.png',
+		url: './img/portfolio/graphic/logos/save-on1.png',
 		title: 'Logos',
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
 	{
 		href: '/miscellaneous',
-		url: './img/portfolio/graphic/chief.png',
+		url: './img/portfolio/graphic/miscellaneous/friday13th_poster.png',
 		title: 'Miscellaneous',
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
