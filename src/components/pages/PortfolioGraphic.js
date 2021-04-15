@@ -75,37 +75,37 @@ const h5Variants = {
 const links = [
 	{
 		href: '/tonys-pizza',
-		url: './img/portfolio/chief.png',
+		url: './img/portfolio/graphic/chief.png',
 		title: "Tony's Pizza and Pasta",
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
 	{
 		href: '/carmines-pizza',
-		url: './img/portfolio/chief.png',
+		url: './img/portfolio/graphic/chief.png',
 		title: "Carmine's Pizzeria",
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
 	{
 		href: '/bliss-bites',
-		url: './img/portfolio/chief.png',
+		url: './img/portfolio/graphic/chief.png',
 		title: 'Bliss Bites',
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
 	{
 		href: '/real-garden',
-		url: './img/portfolio/chief.png',
+		url: './img/portfolio/graphic/chief.png',
 		title: 'Real Garden',
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
 	{
 		href: '/logos',
-		url: './img/portfolio/chief.png',
+		url: './img/portfolio/graphic/chief.png',
 		title: 'Logos',
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
 	{
 		href: '/miscellaneous',
-		url: './img/portfolio/chief.png',
+		url: './img/portfolio/graphic/chief.png',
 		title: 'Miscellaneous',
 		about: 'a Full-Stack React app where small business owners can manage their inventory',
 	},
