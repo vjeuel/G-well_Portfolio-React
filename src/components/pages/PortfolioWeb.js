@@ -3,7 +3,7 @@ import './Pages.css';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-function Portfolio() {
+function PortfolioWeb() {
 	return (
 		<main>
 			<div className='backgroundPortfolio'>
@@ -289,4 +289,4 @@ const links = [
 	},
 ];
 
-export default Portfolio;
+export default PortfolioWeb;
