@@ -2,11 +2,17 @@
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
    grid-template-rows: 1fr;
-   grid-gap: 5rem;
+   grid-gap: 10rem;
    align-items: center;
+   margin: 0 auto;
 }
 
 .graphicImages {
-   max-width: 50rem;
-   max-height: 75rem;
+   max-width: 100rem;
+   max-height: 100rem;
+}
+
+.graphicImagesLogos {
+   max-width: 75rem;
+   max-height: 50rem;
 }
