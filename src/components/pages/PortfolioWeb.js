@@ -1,18 +1,44 @@
 import React from 'react';
 import './Pages.css';
+import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 function Portfolio() {
 	return (
 		<main>
 			<div className='backgroundPortfolio'>
+				<div className='webGraphicButtonsBox'>
+					{menuLinks.map((data) => {
+						return (
+							<motion.div>
+								<NavLink to={data.link} activeClassName='activeNavLink'>
+									<motion.a
+										target='_blank'
+										rel='noopener noreferrer'
+										className='webGraphicButtons'
+										initial={{
+											boxShadow: '0 6px 12px #a6a6a6, 0 -6px 12px #fff',
+										}}
+										whileHover={{
+											backgroundColor: '#ff1e08',
+											color: '#f2f2f2',
+											scale: 1.025,
+											boxShadow: 'inset 0 2px 5px #400702, inset 0 -3px 5px #f2f2f2',
+											transition: { duration: 0 },
+										}}>
+										{data.buttons}
+									</motion.a>
+								</NavLink>
+							</motion.div>
+						);
+					})}
+				</div>
 				<div className='portfolioGrid'>
 					{links.map((data) => {
 						return (
 							<motion.div className='cards' variants={cardsVariants} initial='initial' whileHover='hover'>
 								<a href={data.href} target='_blank' rel='noopener noreferrer' className='projectLinks'>
 									<motion.h4>{data.title}</motion.h4>
-									<h5>{data.about}</h5>
 									<motion.a
 										href={data.github}
 										target='_blank'
@@ -88,6 +114,17 @@ const h5Variants = {
 		transition: { delay: 0.4 },
 	},
 };
+
+const menuLinks = [
+	{
+		buttons: 'web development',
+		link: '/portfolio-web',
+	},
+	{
+		buttons: 'graphic design',
+		link: '/portfolio-graphic',
+	},
+];
 
 const links = [
 	{
@@ -169,7 +206,7 @@ const links = [
 		id: 'crazy team',
 		href: 'https://vjeuel.github.io/TeamProfileGenerator/Develop/output/team.html ',
 		github: 'https://github.com/vjeuel/TeamProfileGenerator',
-		url: './img/portfolio/crazy_team.png',
+		url: './img/portfolio/web/crazy_team.png',
 		title: 'Crazy Team | Team Generator',
 		about:
 			'This app generates profile on several individuals in an organization by asking question on terminal using Node.js and renders a web page once all the data has been added',

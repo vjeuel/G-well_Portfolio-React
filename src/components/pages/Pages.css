@@ -88,8 +88,27 @@
 
 /* Portfolio - Web and Graphic */
 .backgroundPortfolio {
-	background-color: var(--card);
-	padding: 5rem;
+   background-color: var(--card);
+	display: grid;
+   grid-template-rows: 10rem 1fr;
+   padding: 5rem;
+   min-height: 100vh;
+}
+
+.webGraphicButtonsBox {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: flex-start;
+   margin: 0 auto;
+}
+
+.webGraphicButtons {
+   font-size: 2rem;
+   display: inline-block;
+   width: 30rem;
+   padding: 1rem 2rem;
+   margin: 2rem;
+   border-radius: 5rem;
 }
 
 .portfolioGrid {

@@ -8,7 +8,7 @@ function Portfolio() {
 		<main>
 			<div className='backgroundPortfolioMain'>
 				<div className='portfolioGridMain'>
-					{links.map((data) => {
+					{menuLinks.map((data) => {
 						return (
 							<motion.div>
 								<NavLink to={data.link} activeClassName='activeNavLink'>
@@ -38,7 +38,7 @@ function Portfolio() {
 	);
 }
 
-const links = [
+const menuLinks = [
 	{
 		buttons: 'web development',
 		link: '/portfolio-web',
