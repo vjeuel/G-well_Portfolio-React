@@ -62,15 +62,15 @@ const menuLinks = [
 const BlissBitesLinks = [
 	{
 		url: './img/portfolio/graphic/bliss_bites/bliss_logo.png',
-		alt: "Restaurant's logo",
+		alt: "Company's logo",
 	},
 	{
 		url: './img/portfolio/graphic/bliss_bites/bliss_package.png',
-		alt: 'Business Cards',
+		alt: 'Packaging for the product',
 	},
 	{
 		url: './img/portfolio/graphic/bliss_bites/bliss_letterhead.png',
-		alt: 'Window signage',
+		alt: 'Letterhead',
 	},
 ];
 
