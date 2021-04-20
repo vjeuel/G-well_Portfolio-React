@@ -38,7 +38,7 @@ function CarminesPizza() {
 					{carminesLinks.map((data) => {
 						return (
 							<div>
-								<img className='graphicImages' src={data.url} alt={data.id} />
+								<img className='graphicImages' src={data.url} alt={data.alt} />
 							</div>
 						);
 					})}
