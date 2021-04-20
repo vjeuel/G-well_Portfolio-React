@@ -62,43 +62,43 @@ const menuLinks = [
 const carminesLinks = [
 	{
 		url: './img/portfolio/graphic/carmines/carmines_logo.png',
-		alt: '',
+		alt: "Restaurant's logo",
 	},
 	{
 		url: './img/portfolio/graphic/carmines/business_cards.png',
-		alt: '',
+		alt: 'Business Cards',
 	},
 	{
 		url: './img/portfolio/graphic/carmines/windows_signs.png',
-		alt: '',
+		alt: 'Window signage',
 	},
 	{
 		url: './img/portfolio/graphic/carmines/menu_latest.png',
-		alt: '',
+		alt: "Restaurant's Menu",
 	},
 	{
 		url: './img/portfolio/graphic/carmines/carmines_door1.png',
-		alt: '',
+		alt: 'Front door signage',
 	},
 	{
 		url: './img/portfolio/graphic/carmines/carmines_door2.png',
-		alt: '',
+		alt: 'Front door signage',
 	},
 	{
 		url: './img/portfolio/graphic/carmines/banner_menu_latest.png',
-		alt: '',
+		alt: 'Banner wall menu',
 	},
 	{
 		url: './img/portfolio/graphic/carmines/banner_pizza_sizes_latest.png',
-		alt: '',
+		alt: 'Banner pizza menu, showing the sizes of each pizza',
 	},
 	{
 		url: './img/portfolio/graphic/carmines/banner_menu_past.png',
-		alt: '',
+		alt: 'Banner wall menu',
 	},
 	{
 		url: './img/portfolio/graphic/carmines/banner_pizza_sizes_past.png',
-		alt: '',
+		alt: 'Banner pizza menu, showing the sizes of each pizza',
 	},
 ];
 
