@@ -37,7 +37,7 @@ function PortfolioGraphic() {
 					{links.map((data) => {
 						return (
 							<motion.div className='cards' variants={cardsVariants} initial='initial' whileHover='hover'>
-								<a href={data.href} target='_blank' rel='noopener noreferrer' className='projectLinks'>
+								<a href={data.href} rel='noopener noreferrer' className='projectLinks'>
 									<motion.h4>{data.title}</motion.h4>
 									<h5 className='cardsInfoTech'>{data.technology}</h5>
 									<motion.div

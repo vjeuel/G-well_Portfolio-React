@@ -1,5 +1,6 @@
 import React from 'react';
 import './Pages.css';
+import './GraphicPages.css';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -33,7 +34,7 @@ function TonysPizza() {
 						);
 					})}
 				</div>
-				<div className='portfolioGrid'>
+				<div className='portfolioGraphicGrid'>
 					{tonysLinks.map((data) => {
 						return (
 							<div>
@@ -61,67 +62,59 @@ const menuLinks = [
 const tonysLinks = [
 	{
 		url: './img/portfolio/graphic/tonys/logo2014.png',
-		alt: '',
+		alt: 'Restaurant Logo',
 	},
 	{
 		url: './img/portfolio/graphic/tonys/NY2014.png',
-		alt: '',
+		alt: 'New York Style Logo',
 	},
 	{
 		url: './img/portfolio/graphic/tonys/uniform.png',
-		alt: '',
-	},
-	{
-		url: './img/portfolio/graphic/tonys/menu1_front.png',
-		alt: '',
-	},
-	{
-		url: './img/portfolio/graphic/tonys/menu1_back.png',
-		alt: '',
-	},
-	{
-		url: './img/portfolio/graphic/tonys/menu2_front.png',
-		alt: '',
-	},
-	{
-		url: './img/portfolio/graphic/tonys/menu2_back.png',
-		alt: '',
-	},
-	{
-		url: './img/portfolio/graphic/tonys/menu3_front.png',
-		alt: '',
-	},
-	{
-		url: './img/portfolio/graphic/tonys/menu3_back.png',
-		alt: '',
-	},
-	{
-		url: './img/portfolio/graphic/tonys/parking_sign.png',
-		alt: '',
-	},
-	{
-		url: './img/portfolio/graphic/tonys/facebook_cover1.png',
-		alt: '',
-	},
-	{
-		url: './img/portfolio/graphic/tonys/facebook_cover2.png',
-		alt: '',
-	},
-	{
-		url: './img/portfolio/graphic/tonys/facebook_cover3.png',
-		alt: '',
-	},
-	{
-		url: './img/portfolio/graphic/tonys/business_cards_tonys.png',
-		alt: '',
+		alt: "Restaurant's Uniforms",
 	},
 	{
 		url: './img/portfolio/graphic/tonys/box_top.png',
-		alt: '',
+		alt: 'Add to be placed on top of pizza boxes',
+	},
+	{
+		url: './img/portfolio/graphic/tonys/menu1_front.png',
+		alt: "Full restaurant's menu",
+	},
+	{
+		url: './img/portfolio/graphic/tonys/menu1_back.png',
+		alt: "Full restaurant's menu",
+	},
+	{
+		url: './img/portfolio/graphic/tonys/menu2_front.png',
+		alt: "Full restaurant's menu",
+	},
+	{
+		url: './img/portfolio/graphic/tonys/menu2_back.png',
+		alt: "Full restaurant's menu",
+	},
+	{
+		url: './img/portfolio/graphic/tonys/menu3_front.png',
+		alt: "Full restaurant's menu",
+	},
+	{
+		url: './img/portfolio/graphic/tonys/menu3_back.png',
+		alt: "Full restaurant's menu",
+	},
+	{
+		url: './img/portfolio/graphic/tonys/parking_sign.png',
+		alt: 'Parking sign for Customers Only',
+	},
+	{
+		url: './img/portfolio/graphic/tonys/facebook_cover.png',
+		alt: 'Facebook Banners',
+	},
+	{
+		url: './img/portfolio/graphic/tonys/business_cards_tonys.png',
+		alt: 'Business Card',
 	},
 	{
 		url: './img/portfolio/graphic/tonys/counter_menu.png',
-		alt: '',
+		alt: 'Menu to be placed on the counter of the restaurant',
 	},
 ];
 
