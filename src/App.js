@@ -13,7 +13,6 @@ import BlissBites from './components/pages/BlissBites';
 import RealGarden from './components/pages/RealGarden';
 import Logos from './components/pages/Logos';
 import Miscellaneous from './components/pages/Miscellaneous';
-
 import Skills from './components/pages/Skills';
 
 function App() {
@@ -23,11 +22,8 @@ function App() {
 				<Navbar />
 				<Switch>
 					<Route path='/' exact component={withRouter(About)} />
-
 					<Route path='/portfolio' component={withRouter(Portfolio)} />
-
 					<Route path='/portfolio-web' component={withRouter(PortfolioWeb)} />
-
 					<Route path='/portfolio-graphic' component={withRouter(PortfolioGraphic)} />
 					<Route path='/tonys-pizza' component={withRouter(TonysPizza)} />
 					<Route path='/carmines-pizza' component={withRouter(CarminesPizza)} />
@@ -35,9 +31,7 @@ function App() {
 					<Route path='/real-garden' component={withRouter(RealGarden)} />
 					<Route path='/logos' component={withRouter(Logos)} />
 					<Route path='/miscellaneous' component={withRouter(Miscellaneous)} />
-
 					<Route path='/skills' component={withRouter(Skills)} />
-
 					<Route path='/contact' component={withRouter(Contact)} />
 				</Switch>
 			</div>
