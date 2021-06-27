@@ -60,7 +60,6 @@
 }
 
 
-
 /* Portfolio -----------------------------------*/
 .backgroundPortfolioMain {
    background-color: var(--card);
@@ -90,9 +89,11 @@
 .backgroundPortfolio {
    background-color: var(--card);
 	display: grid;
-   grid-template-rows: 15rem 1fr;
+   grid-template-rows: 10rem 1fr;
+   grid-gap: 2.5rem;
    padding: 5rem;
    min-height: 100vh;
+   
 }
 
 .webGraphicButtonsBox {
@@ -117,7 +118,7 @@
 	grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
 	grid-gap: 5rem;
 	justify-items: center;
-
+   
 }
 
 .cards {
@@ -131,7 +132,7 @@
 }
 
 .projectLinks {
-	color: var(--wt);
+   color: var(--wt);
 	height: 100%;
 	display: grid;
 	grid-template-rows: repeat(5, auto);
@@ -152,7 +153,7 @@
 }
 
 .cards h5 {
-	line-height: 1.25;
+   line-height: 1.25;
 	padding: 0 2rem;
 	margin: 0;
 }
@@ -182,7 +183,7 @@
 }
 
 .projectImg {
-	object-fit: cover;
+   object-fit: cover;
 	object-position: top;
 	width: 100%;
 	height: 25rem;
@@ -194,36 +195,71 @@
 
 /* Contact ------------------------------------*/
 .contact {
-	background-color: var(--wt);
+   background-color: var(--wt);
 	overflow-y: scroll;
 }
 
 /* Media Query ----------------------------------*/
 @media (max-width: 960px) {
-	.pagesGrid {
-		padding-right: 5rem;
+   .pagesGrid {
+      padding-right: 5rem;
 	}
+   
+   /* Portfolio -----------------------------------*/
+   .backgroundPortfolio {
+      grid-template-rows: 20rem 1fr;
+      
+   }
+   
+   .backgroundPortfolioMain {
+      padding: 1rem;
+   }
+   
+   .PortfolioButtons {
+      font-size: 2rem;
+      margin: 2.5rem;
+   }
+
+   /* Portfolio - Web and Graphic */
+   .webGraphicButtonsBox {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+   }
+   
+   .webGraphicButtons {
+      font-size: 2rem;
+   }
 }
 
 @media (max-width: 600px) {
-	.pagesGrid {
-		padding-right: 2rem;
+   .pagesGrid {
+      padding-right: 2rem;
 	}
-
+   
 	.navGrid {
-		width: 8rem;
+      width: 8rem;
 	}
-
+   
 	/* About */
 	.jeuelMobile {
-		display: block;
+      display: block;
 		width: 12rem;
 		border: 8px solid var(--rd);
 		border-radius: 50%;
 		justify-self: flex-end;
 	}
-
+   
 	/* Portfolio */
+   .backgroundPortfolioMain {
+      padding: 0.5rem;
+   }
+
+   .PortfolioButtons {
+      font-size: 1.75rem;
+	   padding: 2rem 2.5rem;
+      margin: 1rem;
+   }
+
 	.backgroundPortfolio {
 		width: 85vw;
 		padding: 0rem;

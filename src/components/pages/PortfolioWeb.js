@@ -137,6 +137,15 @@ const links = [
 		technology: 'React, MongoDB, Material UI, JWT and Heroku',
 	},
 	{
+		id: 'healthcare telemed',
+		href: 'https://healthcaretelemed.us/',
+		url: './img/portfolio/web/healthcare_telemed.png',
+		github: 'https://github.com/vjeuel/healthcare_telemed',
+		title: 'Healthcare Telemed',
+		about: 'a Front-End React app where medical providers and patients can get connected',
+		technology: 'React, SASS, EmailJs, Firebase',
+	},
+	{
 		id: 'employee directory',
 		href: 'https://vjeuel.github.io/employee_directory/',
 		github: 'https://github.com/vjeuel/employee_directory',
@@ -169,8 +178,7 @@ const links = [
 		github: 'https://github.com/vjeuel/Digital-Menu-Project',
 		url: './img/portfolio/web/druid.png',
 		title: 'Restaurant User Interface',
-		about:
-			'App that allows restaurants to create, update and delete items on their menus, and uses a login system to protect the data and users',
+		about: 'App that allows restaurants to create, update and delete items on their menus, and uses a login system to protect the data and users',
 		technology: 'MySQL, Express, Sequelize, Shoelace CSS Library and Bcrypt.js',
 	},
 	{
@@ -179,8 +187,7 @@ const links = [
 		github: 'https://github.com/vjeuel/food_api_app',
 		url: './img/portfolio/web/hungry_at_home_api_connection.png',
 		title: 'Hungry at Home',
-		about:
-			'App for searching recipes and drinks while staying informed on the latest Covid-19 news. Uses 3 API from different sources',
+		about: 'App for searching recipes and drinks while staying informed on the latest Covid-19 news. Uses 3 API from different sources',
 		technology: 'Materialize CSS, 3 APIs and jQuery',
 	},
 	{
@@ -189,8 +196,7 @@ const links = [
 		github: 'https://github.com/vjeuel/weather_app',
 		url: './img/portfolio/web/weather_api.png',
 		title: 'Weather|APP',
-		about:
-			'A live weather forecast for any location in the world, where you type a location and shows you the next 5 days forecast and the current weather',
+		about: 'A live weather forecast for any location in the world, where you type a location and shows you the next 5 days forecast and the current weather',
 		technology: 'Moment.js, jQuery, FontAwesome and Weather API',
 	},
 	{
@@ -208,8 +214,7 @@ const links = [
 		github: 'https://github.com/vjeuel/TeamProfileGenerator',
 		url: './img/portfolio/web/crazy_team.png',
 		title: 'Crazy Team | Team Generator',
-		about:
-			'This app generates profile on several individuals in an organization by asking question on terminal using Node.js and renders a web page once all the data has been added',
+		about: 'This app generates profile on several individuals in an organization by asking question on terminal using Node.js and renders a web page once all the data has been added',
 		technology: 'Node.js, Inquirer and Jest',
 	},
 	{
@@ -218,8 +223,7 @@ const links = [
 		github: 'https://github.com/vjeuel/work_day_scheduler',
 		url: './img/portfolio/web/work_day_scheduler.png',
 		title: 'Work Day Scheduler',
-		about:
-			'In this app you can type your daily activities and it will be saved on local storage, so even if you refresh the page you are not losing the typed information',
+		about: 'In this app you can type your daily activities and it will be saved on local storage, so even if you refresh the page you are not losing the typed information',
 		technology: 'Moment.js, jQuery and Bootstrap',
 	},
 	{
@@ -228,8 +232,7 @@ const links = [
 		github: 'https://github.com/vjeuel/Password_Generator',
 		url: './img/portfolio/web/password_generator.png',
 		title: 'Password Generator',
-		about:
-			'Application designed to generate a password by number of characters, numbers, lowercase, uppercase and special characters',
+		about: 'Application designed to generate a password by number of characters, numbers, lowercase, uppercase and special characters',
 		technology: 'HTML, CSS and JavaScript',
 	},
 	{
@@ -283,8 +286,7 @@ const links = [
 		github: 'https://github.com/vjeuel/JavaScript_Quizz',
 		url: './img/portfolio/web/code_quiz.png',
 		title: 'Code Quiz Challenge',
-		about:
-			'Series of questions that runs in a loop, where if you get the answers to be correct it moves to the next question, but if you get it wrong, it deducts 10 seconds from your time and than moves to the next question',
+		about: 'Series of questions that runs in a loop, where if you get the answers to be correct it moves to the next question, but if you get it wrong, it deducts 10 seconds from your time and than moves to the next question',
 		technology: 'HTML, CSS and JavaScript',
 	},
 ];
